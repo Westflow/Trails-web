@@ -1,0 +1,330 @@
+@font-face{
+   font-family: 'headFont';
+   src: url('../Fonts/font.ttf') format('truetype');
+}
+
+body{
+  overflow-x:hidden;
+  color:rgb(6, 19, 138);
+  font-size:200%;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#page {
+  overflow:hidden;
+  white-space:nowrap;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom: 0;
+  background-color: #61A7E1;
+  display:flex;
+  flex-wrap:no-wrap;
+  flex:0 0 7016px;
+}
+
+.container
+{
+  flex:0 0 1920px;
+  right: 5px;
+  align-self: flex-end;
+  height: 750px;
+  display:flex;
+  position:relative;
+  background: url(../Resources/Background/1.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container:nth-child(4n+2)  {
+  flex:0 0 2040px;
+  background: url(../Resources/Background/2.png) no-repeat center center; 
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container:nth-child(4n+3)  {
+  flex:0 0 1880px;
+  background: url(../Resources/Background/3.png) no-repeat center center; 
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container:nth-child(4n+4)  {
+  flex:0 0 1176px;
+  top: 3.5px;
+  height: 755px;
+  background: url(../Resources/Background/4.png) no-repeat center center; 
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#brushes_1{
+  flex:0 0 1800px;
+  right: 3650px;
+  bottom: 0vh;
+  top: 85%;
+  height: 120px;
+  display:flex;
+  position:relative;
+  align-items:center;
+  justify-content:center;
+  background: url(../Resources/Static/brushes-middle.svg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#brushes_2{
+  flex:0 0 1600px;
+  right: 370px;
+  height: 150px;
+  top: 85%;
+  display:flex;
+  position:relative;
+  align-items:center;
+  justify-content:center;
+  background: url(../Resources/Static/brushes-middle.svg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+}
+
+#brushes_3{
+  flex:0 0 1890px;
+  height: 119px;
+  right: 10px;
+  top: 85%;
+  display:flex;
+  position:relative;
+  align-items:center;
+  justify-content:center;
+  background: url(../Resources/Static/brushes-middle.svg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  transform: scaleX(-1);
+}
+
+#CO-PAH_tree{
+  position: absolute;
+  top: 28.75%;
+  left: 863.25px;
+  width: 185px;
+  height: 218px;
+}
+
+#CO-PAH{
+  position: absolute;
+  top: 21%;
+  left: 745px;
+  width: 850px;
+  height: 250px;
+}
+
+#CO-PAH:hover{
+  background: url(../Resources/Active/CO-PAH.svg) no-repeat;
+}
+
+#CO-PAH:hover ~ #Techpark{
+  background: url(../Resources/Active/Techpark.svg) no-repeat;
+}
+
+#CO-PAH:hover ~ #CO-PAH_tree{
+  background: url(../Resources/Static/trees/CO-PAH-tree.svg) no-repeat;
+}
+
+#CO-PAH:hover ~ #Integral{
+  background: url(../Resources/Active/Integral.svg) no-repeat;
+}
+
+#Techpark{
+  position: absolute;
+  top: 37.5%;
+  left: 72px;
+  width: 790px;
+  height: 420px;
+}
+
+#Techpark:hover{
+  background: url(../Resources/Active/Techpark.svg) no-repeat;
+}
+
+#Integral{
+  position: absolute;
+  top: 26%;
+  left: 1420px;
+  width: 510px;
+  height: 320px;
+}
+
+#Integral:hover{
+  background: url(../Resources/Active/Integral.svg) no-repeat;
+}
+
+#House_of_scientists{
+  position: absolute;
+  top: 47%;
+  left: -43px;
+  width: 660px;
+  height: 340px;
+}
+
+#House_of_scientists:hover{
+  background: url(../Resources/Active/House_of_scientists.svg) no-repeat;
+}
+
+#NSU{
+  position: absolute;
+  top: 4.5%;
+  left: 24.5%;
+  width: 900px;
+  height: 650px;
+}
+
+#NSU:hover{
+  background: url(../Resources/Active/NSU.svg) no-repeat;
+}
+
+#NSU:hover ~ #House_of_scientists{
+  background: url(../Resources/Active/House_of_scientists.svg) no-repeat;
+}
+
+#NSU:hover ~ #Mouse_Monument{
+  background: url(../Resources/Active/Mouse_Monument.svg) no-repeat;
+}
+
+#Mouse_Monument{
+  position: absolute;
+  top: 61%;
+  left: 39%;
+  width: 120px;
+  height: 260px;
+}
+
+#Mouse_Monument:hover{
+  background: url(../Resources/Active/Mouse_Monument.svg) no-repeat;
+}
+
+#Mall{
+  position: absolute;
+  top: 49%;
+  right: 93%;
+  width: 950px;
+  height: 400px;
+  background: url(../Resources/Active/Mall.svg) no-repeat;
+}
+
+#Color_Passage{
+  position: absolute;
+  top: 23%;
+  left: 1%;
+  width: 800px;
+  height: 320px;
+}
+#Color_Passage:hover{
+  background: url(../Resources/Active/Color_Passage.svg) no-repeat;
+}
+
+#Pond{
+  position: absolute;
+  top: 70%;
+  left: 225px;
+  width: 600px;
+  height: 150px;
+}
+
+#Pond:hover{
+  background: url(../Resources/Active/Pond.svg) no-repeat;
+}
+
+#Botanical_Garden{
+  position: absolute;
+  right: 99.5%;
+  top: 10%;
+  width: 950px;
+  height: 600px;
+}
+
+#Botanical_Garden:hover{
+  background: url(../Resources/Active/Botanical_Garden.svg) no-repeat;
+}
+
+#Pointer{
+  position: absolute;
+  top: 33%;
+  left: 5.5%;
+  width: 200px;
+  height: 320px;
+}
+
+#Pointer:hover{
+  background: url(../Resources/Active/Pointer.svg) no-repeat;
+}
+
+#Isle{
+  position: absolute;
+  top: 23%;
+  right: 0%;
+  width: 330px;
+  height: 420px;
+}
+
+#Isle:hover{
+  background: url(../Resources/Active/Isle.svg) no-repeat;
+}
+
+.active:hover{
+  -webkit-filter: drop-shadow(2px 2px 0 orange)
+                drop-shadow(-2px 2px 0 orange)
+                drop-shadow(2px -2px 0 orange)
+                drop-shadow(-2px -2px 0 orange);
+filter: drop-shadow(2px 2px 0 orange)
+        drop-shadow(-2px 2px 0 orange)
+        drop-shadow(2px -2px 0 orange)
+        drop-shadow(-2px -2px 0 orange);
+}
+
+#info{
+  position: fixed;
+  width: 50%;
+  height: 50px;
+  left: 25%;
+  top: calc(100% - 60px);
+  border: 2.5px solid orange;
+  border-radius: 15px;
+  align-items: center;
+  color: white;
+  word-wrap:break-word;
+  text-align: center;
+  background: hsla(0, 0%, 0%, 0.5);
+}
+
+#info_text{
+  display:inline-block;
+  max-width: 90%;
+  max-height: 90%;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow:hidden !important;
+  text-overflow: ellipsis;
+  font-family: headFont;
+  text-align: center;
+  font-weight: bold;
+  font-size: calc(20px + .25vw);
+}
